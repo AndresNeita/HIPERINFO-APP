@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imagenSuperior"
+        android:layout_width="428dp"
+        android:layout_height="442dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ri_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:background="#008F9193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardMaxElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imagenSuperior"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <LinearLayout
+            android:id="@+id/segundaParte"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="center"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complicaciones"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <RelativeLayout
+
+                android:layout_width="358dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="200dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white"
+                    android:padding="10sp"
+                    android:text="1) Enfermedades Comunes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="248dp"
+                    android:layout_height="56dp"
+                    android:layout_below="@id/textView9"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-31dp"
+                    android:background="@color/white"
+                    android:padding="10sp"
+                    android:text="2) Anemia de Enfermedad Renal Crónica"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="266dp"
+                    android:layout_height="69dp"
+                    android:layout_below="@id/textView10"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-25dp"
+                    android:background="@color/white"
+                    android:padding="10sp"
+                    android:text="3) Enfermedad Renal Crónica-Enfermedad Mineral Osea"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="266dp"
+                    android:layout_height="69dp"
+                    android:layout_below="@id/textView14"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-25dp"
+                    android:background="@color/white"
+                    android:padding="10sp"
+                    android:text="4) Retraso en el Crecimiento "
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="74dp"
+                    android:layout_height="84dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="282dp"
+
+                    app:srcCompat="@drawable/complicaciones" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

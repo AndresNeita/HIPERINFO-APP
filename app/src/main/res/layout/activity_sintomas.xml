@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sintomas">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card1"
+        android:layout_width="384dp"
+        android:layout_height="638dp"
+        android:layout_marginBottom="76dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:cardBackgroundColor="#E13729"
+        app:cardCornerRadius="40dp"
+        app:cardMaxElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="80dp"
+            android:layout_height="87dp"
+            android:background="#00EA616A"
+            app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+        <LinearLayout
+            android:id="@+id/primeraParte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="SÍNTOMAS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Presión alta"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Cansancio, Confusión, y Debilidad"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Dolor de cabeza"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Náusea y vómito"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Comezón"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Cambio de color en la piel"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Temblor en las manos"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Orinar desproporcionadamente"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Anemia"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="600dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/erc"
+                android:layout_marginTop="30dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

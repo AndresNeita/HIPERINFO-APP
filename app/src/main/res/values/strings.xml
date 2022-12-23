@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ProyectoCOITL</string>
+
+    <string name="lista">lista</string>
+
+    <string-array name="pacientes">
+        <item>Pacientes</item>
+        <item>Los pacientes con diabetes pueden prevenir la enfermedad renal crónica:</item>
+        <item>1) Controlando su nivel de azúcar en la sangre</item>
+        <item>2) Manteniendo la presión sanguínea bajo control</item>
+        <item>3) Pidiéndole a su médico que le realice pruebas para detectar
+                 la enfermedad renal al menos una vez por año</item>
+        <item>4) Haciendo ejercicio con regularidad</item>
+        <item>5) Evitando el consumo de alcohol </item>
+        <item>6) No fumando</item>
+    </string-array>
+
+
+</resources>

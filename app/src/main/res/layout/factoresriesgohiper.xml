@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imagenSuperior"
+        android:layout_width="428dp"
+        android:layout_height="442dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/espalda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:background="#008F9193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardMaxElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imagenSuperior">
+
+
+        <LinearLayout
+            android:id="@+id/segundaParte"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Factores de riesgo"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textSize="25sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 1) consumo execesivo de sal"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 2) Consumo de alimentos con mucha grasa"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 3) No hace ejercicio"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 4) Consumo excesivo de alcohol "
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 5) Tabaquismo"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 6) Obesidad"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 7) Sobrepeso "
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 8) Hombre mayor de 65 años"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 9) Antecedentes Familiares "
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 10) Enfermedad Crónica Renal"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

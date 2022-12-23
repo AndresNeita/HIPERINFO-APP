@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/primeraParte"
+        android:layout_width="455dp"
+        android:layout_height="328dp"
+        android:background="@drawable/ri_on"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/scrolling"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="75dp"
+            android:layout_height="92dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="68dp"
+            android:background="#00D6D6D6"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+    </RelativeLayout>
+
+    <!--segunda parte  -->
+
+    <ScrollView
+        android:background="@color/white"
+        android:id="@+id/scrolling"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/primeraParte"
+        app:layout_constraintBottom_toTopOf="@+id/btn1">
+
+        <LinearLayout
+            android:id="@+id/segundaParte"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/textView3"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:text="Medidas Preventivas"
+                android:textSize="25sp"
+                android:textColor="@color/red"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bordes2"
+                    android:padding="4sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@color/red"
+                    android:padding="10sp"
+                    android:text="Reducir la ingesta de sal (a menos de 5 g diarios)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="106dp"
+                    android:layout_height="118dp"
+                    android:layout_alignEnd="@id/textView4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="0dp"
+
+                    app:srcCompat="@drawable/enfermedades" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bordes"
+                    android:padding="4sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="323dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@color/light_blue"
+                    android:padding="10sp"
+                    android:text="No consumir tabaco"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="132dp"
+                    android:layout_height="113dp"
+                    android:layout_alignEnd="@id/textView5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="-10dp"
+
+                    app:srcCompat="@drawable/nofumar" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bordes2"
+                    android:padding="4sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="212dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@color/red"
+                    android:padding="10sp"
+                    android:text="Consumir más frutas y verduras"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="111dp"
+                    android:layout_height="107dp"
+                    android:layout_alignEnd="@id/textView6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="1dp"
+
+                    app:srcCompat="@drawable/dieta" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bordes"
+                    android:padding="4sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@color/light_blue"
+                    android:padding="10sp"
+                    android:text="Reducir el consumo de alcohol"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="111dp"
+                    android:layout_height="106dp"
+                    android:layout_alignEnd="@id/textView9"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="1dp"
+
+                    app:srcCompat="@drawable/alcohol" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_marginBottom="30dp"
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bordes2"
+                    android:padding="4sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="225dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@color/red"
+                    android:padding="10sp"
+                    android:text="Realizar actividad física con regularidad"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="112dp"
+                    android:layout_height="101dp"
+                    android:layout_alignEnd="@id/textView7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="0dp"
+
+                    app:srcCompat="@drawable/ejercicio" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_marginBottom="30dp"
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bordes"
+                    android:padding="4sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="244dp"
+                    android:layout_height="97dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@color/light_blue"
+                    android:padding="10sp"
+                    android:text="Limitar la ingesta de alimentos ricos en grasas saturadas"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="111dp"
+                    android:layout_height="112dp"
+                    android:layout_alignEnd="@id/textView11"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+
+                    app:srcCompat="@drawable/analgesico" />
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn1"
+        >
+
+    </Button>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

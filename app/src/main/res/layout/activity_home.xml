@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#D6D6D6">
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:id="@+id/tvHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENFERMEDAD"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tvEC2"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RENAL"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHome" />
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:id="@+id/EC3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRONICA"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEC2"/>
+
+    <LinearLayout
+        android:layout_marginStart="30dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EC3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvHome2"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/ivrinon"
+                android:text="La enfermedad renal crómica (ERC) se define como una anormalidad, ya sea en la forma o función renal, durante más de 3 meses"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ivrinon"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:src="@mipmap/ic_rinon_foreground" />
+
+            <TextView
+                android:id="@+id/tvHome3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(CDC, 2021)"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_below="@+id/tvHome2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="30dp"/>
+            <Button
+                android:id="@+id/bttnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Saber más"
+                android:layout_below="@+id/tvHome3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHome3"
+                android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:id="@+id/tvHome4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hipertensión"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvHome4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp">
+
+            <TextView
+                android:id="@+id/tvHome5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:text="La hipertención es una condición común que afecta a una de cada tres adultos en los Estados Unidos. Las directrices del Colegio Americano de Cardiología (ACC)/ Asociación Americana del Corazón (AHA) de 2017 la definen como una presión arterial de >= 130/80 mm Hg y los criterios del Octavo Comité Nacional Conjunto ( JNC 8) como >= 140/90 mm Hg"
+                android:textSize="15sp"
+                android:layout_toStartOf="@+id/ivrinon2" />
+
+            <ImageView
+                android:id="@+id/ivrinon2"
+                android:layout_width="97dp"
+                android:layout_height="272dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/corazon" />
+
+            <Button
+                android:id="@+id/bttnHome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Saber más"
+                android:backgroundTint="@color/red"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_below="@+id/tvHome5"
+                android:layout_marginTop="30dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
